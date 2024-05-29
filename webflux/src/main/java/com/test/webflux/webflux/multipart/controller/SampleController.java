@@ -1,4 +1,4 @@
-package com.test.webflux.webflux.multipart;
+package com.test.webflux.webflux.multipart.controller;
 
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;

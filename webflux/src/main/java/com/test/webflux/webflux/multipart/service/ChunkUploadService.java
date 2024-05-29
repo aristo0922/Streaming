@@ -1,4 +1,4 @@
-package com.test.webflux.webflux.multipart;
+package com.test.webflux.webflux.multipart.service;
 
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
