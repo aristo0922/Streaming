@@ -1,3 +1,7 @@
+video/
+src/main/resources/static/
+
+
 HELP.md
 .gradle
 build/
