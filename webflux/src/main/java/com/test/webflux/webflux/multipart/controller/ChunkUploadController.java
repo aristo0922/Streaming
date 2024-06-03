@@ -7,6 +7,7 @@ import com.test.webflux.webflux.multipart.service.MovieCreateService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.core.io.InputStreamResource;
 import org.springframework.core.io.Resource;
+import org.springframework.core.io.support.ResourceRegion;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -96,6 +97,10 @@ public class ChunkUploadController {
 //        responseHeader.add("Content-Length", Long.toString(file.length()));
 //        return ResponseEntity.ok().headers(responseHeader).body(streamingResponseBody);
 //    }
+    @GetMapping("/streamingVideo/{movieId}")
+    public ResponseEntity<ResourceRegion> streamingVideo(@RequestHeader HttpHeaders httpHeaders, @PathVariable int movieId){
+        return movieCreateService.streamingVideo(httpHeaders, movieId);
+    }
 
 
 }
