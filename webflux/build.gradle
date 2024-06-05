@@ -30,6 +30,7 @@ dependencies {
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'io.projectreactor:reactor-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+	implementation 'net.bramp.ffmpeg:ffmpeg:0.7.0'
 //	implementation 'org.springframework.security:spring-security-config:6.1.5'
 //	testImplementation 'org.springframework.security:spring-security-test:5.8.8'
 }
