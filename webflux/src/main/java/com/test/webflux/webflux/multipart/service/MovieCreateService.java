@@ -21,7 +21,8 @@ public class MovieCreateService{
             System.out.println("파일 넣으십셔.");
             return;
         }
-        Path filepath = Paths.get("src/main/resources/static", file.getOriginalFilename());
+        //반드시 존재하는 경로여야 함
+        Path filepath = Paths.get("src/main/resources/static/origin", file.getOriginalFilename());
 
         // 해당 path 에 파일의 스트림 데이터를 저장
         try (OutputStream os = Files.newOutputStream(filepath)) {
